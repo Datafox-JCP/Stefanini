@@ -11,7 +11,19 @@
 		C6BEF0452B45DD6900E7FAC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF0442B45DD6900E7FAC8 /* ContentView.swift */; };
 		C6BEF0472B45DD7200E7FAC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BEF0462B45DD7200E7FAC8 /* Assets.xcassets */; };
 		C6BEF04A2B45DD7200E7FAC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BEF0492B45DD7200E7FAC8 /* Preview Assets.xcassets */; };
+		C6BEF0512B45DD9D00E7FAC8 /* SumOfEvenNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF0502B45DD9D00E7FAC8 /* SumOfEvenNumbers.swift */; };
+		C6BEF05B2B45DED900E7FAC8 /* StefaniniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF05A2B45DED900E7FAC8 /* StefaniniTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6BEF05C2B45DED900E7FAC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6BEF0372B45DD6900E7FAC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BEF03E2B45DD6900E7FAC8;
+			remoteInfo = Stefanini;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C6BEF03F2B45DD6900E7FAC8 /* Stefanini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stefanini.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +31,20 @@
 		C6BEF0442B45DD6900E7FAC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C6BEF0462B45DD7200E7FAC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6BEF0492B45DD7200E7FAC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6BEF0502B45DD9D00E7FAC8 /* SumOfEvenNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfEvenNumbers.swift; sourceTree = "<group>"; };
+		C6BEF0582B45DED900E7FAC8 /* StefaniniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StefaniniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BEF05A2B45DED900E7FAC8 /* StefaniniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StefaniniTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C6BEF03C2B45DD6900E7FAC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BEF0552B45DED900E7FAC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				C6BEF0412B45DD6900E7FAC8 /* Stefanini */,
+				C6BEF0592B45DED900E7FAC8 /* StefaniniTests */,
 				C6BEF0402B45DD6900E7FAC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				C6BEF03F2B45DD6900E7FAC8 /* Stefanini.app */,
+				C6BEF0582B45DED900E7FAC8 /* StefaniniTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +77,7 @@
 			children = (
 				C6BEF0422B45DD6900E7FAC8 /* StefaniniApp.swift */,
 				C6BEF0442B45DD6900E7FAC8 /* ContentView.swift */,
+				C6BEF0502B45DD9D00E7FAC8 /* SumOfEvenNumbers.swift */,
 				C6BEF0462B45DD7200E7FAC8 /* Assets.xcassets */,
 				C6BEF0482B45DD7200E7FAC8 /* Preview Content */,
 			);
@@ -65,6 +90,14 @@
 				C6BEF0492B45DD7200E7FAC8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6BEF0592B45DED900E7FAC8 /* StefaniniTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEF05A2B45DED900E7FAC8 /* StefaniniTests.swift */,
+			);
+			path = StefaniniTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +120,24 @@
 			productReference = C6BEF03F2B45DD6900E7FAC8 /* Stefanini.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C6BEF0572B45DED900E7FAC8 /* StefaniniTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BEF05E2B45DED900E7FAC8 /* Build configuration list for PBXNativeTarget "StefaniniTests" */;
+			buildPhases = (
+				C6BEF0542B45DED900E7FAC8 /* Sources */,
+				C6BEF0552B45DED900E7FAC8 /* Frameworks */,
+				C6BEF0562B45DED900E7FAC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6BEF05D2B45DED900E7FAC8 /* PBXTargetDependency */,
+			);
+			name = StefaniniTests;
+			productName = StefaniniTests;
+			productReference = C6BEF0582B45DED900E7FAC8 /* StefaniniTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +150,10 @@
 				TargetAttributes = {
 					C6BEF03E2B45DD6900E7FAC8 = {
 						CreatedOnToolsVersion = 15.1;
+					};
+					C6BEF0572B45DED900E7FAC8 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = C6BEF03E2B45DD6900E7FAC8;
 					};
 				};
 			};
@@ -116,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				C6BEF03E2B45DD6900E7FAC8 /* Stefanini */,
+				C6BEF0572B45DED900E7FAC8 /* StefaniniTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +186,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C6BEF0562B45DED900E7FAC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,10 +202,27 @@
 			files = (
 				C6BEF0452B45DD6900E7FAC8 /* ContentView.swift in Sources */,
 				C6BEF0432B45DD6900E7FAC8 /* StefaniniApp.swift in Sources */,
+				C6BEF0512B45DD9D00E7FAC8 /* SumOfEvenNumbers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BEF0542B45DED900E7FAC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BEF05B2B45DED900E7FAC8 /* StefaniniTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6BEF05D2B45DED900E7FAC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6BEF03E2B45DD6900E7FAC8 /* Stefanini */;
+			targetProxy = C6BEF05C2B45DED900E7FAC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C6BEF04B2B45DD7200E7FAC8 /* Debug */ = {
@@ -322,6 +402,42 @@
 			};
 			name = Release;
 		};
+		C6BEF05F2B45DED900E7FAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2Q4YR3P44;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.datafox.StefaniniTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stefanini.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stefanini";
+			};
+			name = Debug;
+		};
+		C6BEF0602B45DED900E7FAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2Q4YR3P44;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.datafox.StefaniniTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stefanini.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stefanini";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +455,15 @@
 			buildConfigurations = (
 				C6BEF04E2B45DD7200E7FAC8 /* Debug */,
 				C6BEF04F2B45DD7200E7FAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BEF05E2B45DED900E7FAC8 /* Build configuration list for PBXNativeTarget "StefaniniTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BEF05F2B45DED900E7FAC8 /* Debug */,
+				C6BEF0602B45DED900E7FAC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
