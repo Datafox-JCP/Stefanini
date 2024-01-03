@@ -11,7 +11,7 @@ import SwiftUI
 struct StefaniniApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GithubUsersListView()
         }
     }
 }

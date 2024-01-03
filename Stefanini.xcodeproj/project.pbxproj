@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		C6BEF0432B45DD6900E7FAC8 /* StefaniniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF0422B45DD6900E7FAC8 /* StefaniniApp.swift */; };
-		C6BEF0452B45DD6900E7FAC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF0442B45DD6900E7FAC8 /* ContentView.swift */; };
+		C6BEF0452B45DD6900E7FAC8 /* GithubUsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF0442B45DD6900E7FAC8 /* GithubUsersListView.swift */; };
 		C6BEF0472B45DD7200E7FAC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BEF0462B45DD7200E7FAC8 /* Assets.xcassets */; };
 		C6BEF04A2B45DD7200E7FAC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BEF0492B45DD7200E7FAC8 /* Preview Assets.xcassets */; };
 		C6BEF0512B45DD9D00E7FAC8 /* SumOfEvenNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF0502B45DD9D00E7FAC8 /* SumOfEvenNumbers.swift */; };
 		C6BEF05B2B45DED900E7FAC8 /* StefaniniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF05A2B45DED900E7FAC8 /* StefaniniTests.swift */; };
+		C6BEF0642B45E84500E7FAC8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF0632B45E84500E7FAC8 /* User.swift */; };
+		C6BEF0692B45E8AB00E7FAC8 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF0682B45E8AB00E7FAC8 /* WebService.swift */; };
+		C6BEF06D2B45EAC200E7FAC8 /* ErrorCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF06C2B45EAC200E7FAC8 /* ErrorCases.swift */; };
+		C6BEF06F2B45EB4E00E7FAC8 /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF06E2B45EB4E00E7FAC8 /* UsersListViewModel.swift */; };
+		C6BEF0712B45EBD900E7FAC8 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF0702B45EBD900E7FAC8 /* LoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +33,17 @@
 /* Begin PBXFileReference section */
 		C6BEF03F2B45DD6900E7FAC8 /* Stefanini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stefanini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BEF0422B45DD6900E7FAC8 /* StefaniniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StefaniniApp.swift; sourceTree = "<group>"; };
-		C6BEF0442B45DD6900E7FAC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6BEF0442B45DD6900E7FAC8 /* GithubUsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersListView.swift; sourceTree = "<group>"; };
 		C6BEF0462B45DD7200E7FAC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6BEF0492B45DD7200E7FAC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6BEF0502B45DD9D00E7FAC8 /* SumOfEvenNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfEvenNumbers.swift; sourceTree = "<group>"; };
 		C6BEF0582B45DED900E7FAC8 /* StefaniniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StefaniniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BEF05A2B45DED900E7FAC8 /* StefaniniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StefaniniTests.swift; sourceTree = "<group>"; };
+		C6BEF0632B45E84500E7FAC8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C6BEF0682B45E8AB00E7FAC8 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		C6BEF06C2B45EAC200E7FAC8 /* ErrorCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCases.swift; sourceTree = "<group>"; };
+		C6BEF06E2B45EB4E00E7FAC8 /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
+		C6BEF0702B45EBD900E7FAC8 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				C6BEF0422B45DD6900E7FAC8 /* StefaniniApp.swift */,
-				C6BEF0442B45DD6900E7FAC8 /* ContentView.swift */,
 				C6BEF0502B45DD9D00E7FAC8 /* SumOfEvenNumbers.swift */,
+				C6BEF0742B45ED9E00E7FAC8 /* Views */,
+				C6BEF0732B45ED8000E7FAC8 /* Service */,
+				C6BEF0722B45ED6600E7FAC8 /* ViewModels */,
+				C6BEF0672B45E87900E7FAC8 /* Models */,
 				C6BEF0462B45DD7200E7FAC8 /* Assets.xcassets */,
 				C6BEF0482B45DD7200E7FAC8 /* Preview Content */,
 			);
@@ -98,6 +111,40 @@
 				C6BEF05A2B45DED900E7FAC8 /* StefaniniTests.swift */,
 			);
 			path = StefaniniTests;
+			sourceTree = "<group>";
+		};
+		C6BEF0672B45E87900E7FAC8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEF0632B45E84500E7FAC8 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C6BEF0722B45ED6600E7FAC8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEF06E2B45EB4E00E7FAC8 /* UsersListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C6BEF0732B45ED8000E7FAC8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEF0682B45E8AB00E7FAC8 /* WebService.swift */,
+				C6BEF06C2B45EAC200E7FAC8 /* ErrorCases.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C6BEF0742B45ED9E00E7FAC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEF0442B45DD6900E7FAC8 /* GithubUsersListView.swift */,
+				C6BEF0702B45EBD900E7FAC8 /* LoaderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6BEF0452B45DD6900E7FAC8 /* ContentView.swift in Sources */,
+				C6BEF0692B45E8AB00E7FAC8 /* WebService.swift in Sources */,
+				C6BEF0642B45E84500E7FAC8 /* User.swift in Sources */,
+				C6BEF0452B45DD6900E7FAC8 /* GithubUsersListView.swift in Sources */,
+				C6BEF06F2B45EB4E00E7FAC8 /* UsersListViewModel.swift in Sources */,
+				C6BEF06D2B45EAC200E7FAC8 /* ErrorCases.swift in Sources */,
 				C6BEF0432B45DD6900E7FAC8 /* StefaniniApp.swift in Sources */,
+				C6BEF0712B45EBD900E7FAC8 /* LoaderView.swift in Sources */,
 				C6BEF0512B45DD9D00E7FAC8 /* SumOfEvenNumbers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
