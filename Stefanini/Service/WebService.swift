@@ -22,7 +22,6 @@ final class WebService {
         
         do {
             let decoder = JSONDecoder()
-            decoder.keyDecodingStrategy = .convertFromSnakeCase
             return try decoder.decode([User].self, from: data)
         } catch {
             throw ErrorCases.invalidData

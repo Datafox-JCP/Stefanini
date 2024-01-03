@@ -6,10 +6,18 @@
 //
 
 import Foundation
+import SwiftData
 
 @MainActor
 final class UsersListViewModel: ObservableObject {
-    @Published var Users: [User]?
+    
+    var modelContext: ModelContext?
+    
+    init(modelContext: ModelContext?) {
+        self.modelContext = modelContext
+    }
+    
+//    @Published var Users: [User]?
     @Published var userError: ErrorCases?
     @Published var shouldShowAlert = false
     @Published var isLoading = false
@@ -17,7 +25,10 @@ final class UsersListViewModel: ObservableObject {
     func getUsers() async {
         isLoading = true
         do {
-            self.Users = try await WebService.getUsersData()
+            let users = try await WebService.getUsersData()
+            users.forEach {
+                modelContext?.insert($0)
+            }
             self.isLoading = false
         } catch(let error) {
             userError = ErrorCases.custom(error: error)

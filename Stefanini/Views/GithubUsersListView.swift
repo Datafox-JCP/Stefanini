@@ -6,24 +6,23 @@
     //
 
 import SwiftUI
+import SwiftData
 
 struct GithubUsersListView: View {
     // MARK: Properties
     
-    @ObservedObject var usersViewModel = UsersListViewModel()
+    @EnvironmentObject var usersViewModel: UsersListViewModel
+    @Query var localDB: [User]
     
     // MARK: View
     var body: some View {
         NavigationStack {
-            List(usersViewModel.Users ?? [], id: \.id) { user in
+            List(localDB, id: \.id) { user in
                 VStack(alignment: .leading) {
                     Text(user.login?.capitalized ?? "")
                         .font(.headline)
                     
                     Label(user.url ?? "", systemImage: "globe")
-                        .font(.subheadline)
-                    
-                    Label(user.type.rawValue, systemImage: "person")
                         .font(.subheadline)
                 } // VStack
             } // List
@@ -35,7 +34,9 @@ struct GithubUsersListView: View {
             }
         } // Navigation
         .task {
-            await usersViewModel.getUsers()
+            if localDB.isEmpty {
+                await usersViewModel.getUsers()
+            }
         }
         .alert(isPresented: $usersViewModel.shouldShowAlert) {
             return Alert(
